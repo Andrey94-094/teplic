@@ -1,0 +1,92 @@
+.section__timer {
+    padding: 1.5rem;
+    >div:nth-child(1) {
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+        @media (max-width: 520px) {
+            font-size: 1.65rem;
+        }
+    }
+}
+
+.section__timer__text {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 520px) {
+        font-size: 1.25rem;
+    }
+    p {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    img {
+        border-radius: 16px;
+    }
+}
+
+.section__timer__content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section__timer__content__form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px dotted red;
+    border-radius: 8px;
+    width: 320px;
+    text-align: center;
+    font-size: 1.5rem;
+    >div:nth-child(1) {
+        text-align: center;
+        border: 1px dotted red;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        padding-bottom: 20px;
+        >p {
+            font-size: 1.2rem;
+        }
+    }
+    input {
+        height: 35px;
+        width: 93%;
+        margin: 0px auto 1rem auto;
+        border-radius: 5px;
+        border: 1px solid #363636;
+        padding: 1.5rem 1rem 1.5rem 1rem;
+        font-size: 1.1rem;
+    }
+    button {
+        width: 93%;
+        background-color: #ff8850;
+        border: none;
+        border-radius: 6px;
+        font-size: 20px;
+    }
+    >p {
+        margin: 1rem auto 0rem auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section__timer__content {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .section__timer__text img {
+        width: 200px;
+    }
+}
+
+.lightcountdown {
+    font-size: 2.1rem;
+    @media (max-width: 420px) {
+        font-size: 1.8rem;
+    }
+}

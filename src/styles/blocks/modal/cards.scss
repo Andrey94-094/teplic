@@ -1,0 +1,61 @@
+.cardModal {
+  .close-m {
+    position: absolute;
+    z-index: 10;
+    top: -27px;
+    right: -39px;
+    opacity: 1;
+    line-height: 0.5;
+    font-size: 3rem;
+    cursor: pointer;
+    color: white;
+    @media (max-width: 720px) {
+      top: 5px;
+      right: 8px;
+    }
+  }
+  .modal-dialog {
+    max-width: 600px;
+  }
+
+  &__body {
+    background-color: #ffc107;
+    padding: 0rem;
+    &-title {
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+      padding: 1rem 0rem;
+    }
+    &-content {
+      &-item {
+        display: flex;
+        >div {
+          border: 2px solid white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 50%;
+          padding: 1rem 0rem;
+          img {
+            width: 160px;
+            display: block;
+            @media (max-width: 600px) {
+              width: 100px;
+            }
+          }
+          p {
+            text-align: center;
+            color: white;
+            font-size: 1.45rem;
+            margin-bottom: .25rem;
+            @media (max-width: 600px) {
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

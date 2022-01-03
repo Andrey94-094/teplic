@@ -1,0 +1,117 @@
+.video {
+    padding: 2rem 0rem;
+    background: linear-gradient(to bottom, #fff 0, #f4f5f5 18%, #f4f5f5 100%);
+    @media (max-width: 770px) {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    &__title {
+        background-image: url("./../public/images/video/mazok_gray.png");
+        justify-content: center;
+        font-weight: bold;
+        font-size: 2rem;
+        display: flex;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 2rem;
+        text-align: center;
+        @media (max-width: 500px) {
+            font-size: 1.45rem;
+        }
+    }
+    &__content {
+        &-item {
+            padding: 1rem;
+            a {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        @media (max-width: 770px) {
+            display: none;
+        }
+    }
+    &__slider {
+        display: none;
+        @media (max-width: 770px) {
+            display: block;
+        }
+        &-item {
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .carousel-control-next {
+            right: 10px;
+            span {
+                width: 3rem;
+                height: 3rem;
+            }
+            @media (max-width: 655px) {
+                right: 0%;
+                opacity: 1;
+            }
+        }
+        .carousel-control-prev {
+            left: 0;
+            span {
+                width: 3rem;
+                height: 3rem;
+            }
+            @media (max-width: 655px) {
+                left: 0%;
+                opacity: 1;
+            }
+        }
+        .carousel-indicators {
+            top: calc(100% + 10px);
+            @media (max-width: 400px) {
+                top: 100%-10%;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+        }
+    }
+    &__icons {
+        padding: 3rem 0rem;
+        display: flex;
+        @media (max-width: 776px) {
+            display: none;
+        }
+        &-item {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            padding: 0rem .25rem;
+            >div {
+                height: 80%;
+                img {
+                    width: 75%;
+                    margin: 0rem auto;
+                    display: block;
+                }
+            }
+            justify-content: center;
+            align-items: center;
+            p {
+                height: 20%;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.videos {
+    @media (max-width: 400px) {
+        width: 320px;
+        --bs-gutter-x: 0;
+        // margin-left: 0;
+        // margin-right: 0;
+    }
+}

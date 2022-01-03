@@ -1,0 +1,175 @@
+.choose {
+  padding-top: 180px;
+  padding-bottom: 40px;
+  background-image: url("./../public/images/choose/fon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  z-index: 1;
+  @media (max-width: 600px) {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  &__content {
+      width: 80%;
+      margin: 0rem auto;
+      @media (max-width: 950px) {
+        width: 92%;
+      }
+      @media (max-width: 570px) {
+        width: 96%;
+      }
+      &-title {
+        text-align: center;
+        text-shadow: rgb(255 255 255) 1px 1px 0, rgb(255 255 255) -1px -1px 0, rgb(255 255 255) -1px 1px 0, rgb(255 255 255) 1px -1px 0;
+        font-size: 2.7rem;
+        padding: 1rem 0rem;
+        @media (max-width: 950px) {
+          font-size: 2rem;
+        }
+      }
+
+      &-bottom {
+        display: flex;
+        @media (max-width: 720px) {
+          flex-direction: column;
+        }
+        &-form {
+          width: 50%;
+          position: relative;
+          z-index: 5;
+          background-color: white;
+          padding: 1rem;
+          @media (max-width: 950px) {
+            width: 100%;
+          }
+          &-text {
+            background-image: url("./../public/images/choose/mazok_gray.png");
+            font-size: 1.55rem;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: rgb(255 255 255) 1px 1px 0, rgb(255 255 255) -1px -1px 0, rgb(255 255 255) -1px 1px 0, rgb(255 255 255) 1px -1px 0;
+          }
+          &-item {
+            margin: 1.3rem 0rem;
+            font-size: 1.45rem;
+            img {
+              width: 2rem;
+            }
+          }
+          &-button {
+            background: linear-gradient(to right, #6b278a 0, #b60a45 100%);
+            color: white;
+            width: 70%;
+            display: block;
+            margin: 0rem auto;
+            font-size: 1.15rem;
+            font-weight: bold;
+          }
+
+        }
+        &-items {
+          width: 50%;
+          padding: 0rem 2rem;
+          @media (max-width: 950px) {
+            width: 100%;
+          }
+          &-item {
+            display: flex;
+            margin: 1.25rem 0rem;
+            div:nth-child(1) {
+              width: 60px;
+              img {
+                width: 100%;
+              }
+            }
+            >div:nth-child(2) {
+              padding: 0rem 1rem;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              >p {
+                color: white;
+                font-size: 1.25rem;
+                font-weight: bold;
+                text-shadow: rgb(0 0 0) 1px 1px 0, rgb(0 0 0) -1px -1px 0, rgb(0 0 0) -1px 1px 0, rgb(0 0 0) 1px -1px 0;
+              }
+            }
+
+          }
+
+        }
+      }
+      &-cards {
+        width: 100%;
+        margin: 2rem auto;
+        display: flex;
+        @media (max-width: 1140px) {
+          flex-direction: column;
+        }
+        >div {
+          width: 50%;
+          display: flex;
+          justify-content: space-around;
+          @media (max-width: 1140px) {
+            width: 100%;
+          }
+        }
+        >div:nth-child(2) {
+          @media (max-width: 1140px) {
+            margin-top: 1.5rem;
+          }
+        }
+        &-card {
+          width: 125px;
+          @media (max-width: 570px) {
+            width: 80px;
+          }
+          >div {
+            position: relative;
+            >p {
+              text-align: center;
+              top: 15px;
+              left: 4px;
+              position: absolute;
+              transform: rotate(-6grad);
+              font-weight: bold;
+              width: 90%;
+              font-size: .92rem;
+              cursor: default;
+              @media (max-width: 570px) {
+                font-size: .85rem;
+                width: 95%;
+                top: 1px;
+              }
+            }
+            >img {
+              width: 100%;
+            }
+          }
+        }
+        &-card:hover {
+          >div:nth-child(2) {
+            img {
+              transform: translate(0, -7px);
+              transition: .3s;
+            }
+          }
+        }
+        &-card {
+          >div:nth-child(2) {
+            img {
+              transition: .3s;
+            }
+          }
+        }
+
+
+      }
+
+
+  }
+}

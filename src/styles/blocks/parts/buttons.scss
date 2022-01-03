@@ -1,0 +1,70 @@
+.consultation-button {
+  background: linear-gradient(to left, #6b278a, #b60a45);
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+.submit-button {
+  background: linear-gradient(to left, #b60a45, #6b278a);
+  color: white;
+  font-size: 1.3rem;
+  border: none;
+  width: 100%;
+  border-radius: 2rem;
+  padding: .35rem 0rem;
+  animation: pulser 2s infinite;
+}
+
+@keyframes pulser {
+  0% {
+
+    box-shadow: 0 0 0 0 rgb(182 10 69 / 40%);
+  }
+
+  70% {
+
+    box-shadow: 0 0 0 15px rgb(182 10 69 / 0%);
+  }
+  100% {
+
+    box-shadow: 0 0 0 0 rgb(182 10 69 / 0%);
+  }
+
+}
+
+
+.call-button {
+  background: linear-gradient(to left, #6b278a, #b60a45);
+  color: #fff;
+  border-radius: .85rem;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.call-button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: 0%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(to bottom, rgba(226, 221, 219, 0), rgb(255, 255, 255) 50%, rgba(239, 238, 238, 0));
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+.call-button:after, .call-button:after {
+  animation: sheen 2s forwards;
+  animation-iteration-count:infinite;
+  animation-fill-mode: forwards;
+  @media (max-width: 780px) {
+    animation: none;
+  }
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -15em);
+  }
+}

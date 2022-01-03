@@ -1,0 +1,36 @@
+.accessories {
+  padding: 2rem;
+   &__title {
+     font-weight: bold;
+     text-align: center;
+     font-size: 2rem;
+     margin: 2rem 0rem;
+   }
+   &__items {
+     &-item {
+       border-radius: 2.6rem;
+       background-color: rgba(237, 243, 241, 0.788);
+       margin: .45rem;
+       box-shadow: 0.1rem 0.3rem 1rem rgb(0 0 0 / 60%);
+     &-image {
+         border-top-right-radius: 2rem;
+         border-top-left-radius: 2rem;
+         width: 100%;
+       }
+       &-title {
+         text-align: center;
+         font-weight: bold;
+         font-size: 1.1rem;
+         margin-top: 1rem;
+       }
+       &-price {
+         margin: 1rem 0rem;
+         font-size: 2rem;
+         text-align: center;
+         font-weight: bold;
+       }
+     }
+
+
+   }
+}

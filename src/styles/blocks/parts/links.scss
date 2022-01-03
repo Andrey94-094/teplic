@@ -1,0 +1,27 @@
+.link-red {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.link-red:hover {
+  span {
+    color: #ff8562;;
+    border-bottom: .1rem solid #ff8562;
+    transition: border-bottom .11s;
+  }
+}
+
+.link-white {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-white:hover {
+  span {
+    color: white;;
+    border-bottom: .1rem solid white;
+    transition: border-bottom .11s;
+  }
+}

@@ -1,0 +1,60 @@
+.installment {
+    padding: 2rem 0rem;
+    background-image: url("./../public/images/installment/bg_in.png");
+    &__content {
+        &-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.65rem;
+            @media (max-width: 555px) {
+                font-size: 1.20rem;
+            }
+        }
+        &-items {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0rem;
+            @media (max-width: 555px) {
+                flex-direction: column;
+                align-items: center;
+            }
+            >div {
+                display: flex;
+                flex-direction: column;
+                margin: 1rem 2rem;
+                align-items: center;
+                width: 200px;
+                >img {
+                    width: 100px;
+                    display: block;
+                }
+                >p {
+                    text-align: center;
+                    font-size: 1.15rem;
+                    font-weight: bold;
+                }
+            }
+        }
+        &-form {
+            &-input {
+                width: 350px;
+                display: block;
+                margin: 1rem auto;
+                border-radius: 18px;
+                border: 1px solid #09b53e;
+                @media (max-width: 480px) {
+                    width: 220px;
+                }
+            }
+            &-button {
+                border: 2px solid #f52928;
+                border-radius: 25px;
+                background: #f52928;
+                margin: 0rem auto;
+                display: block;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+}

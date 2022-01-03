@@ -1,0 +1,45 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import "public/lib/fancybox-master/fansybox";
+
+@import "~animate.css/animate.min.css";
+
+@import "blocks/parts/links";
+@import "blocks/parts/buttons";
+@import "blocks/header";
+@import "blocks/choose";
+@import "blocks/video";
+@import "blocks/accessories";
+@import "blocks/why";
+@import "blocks/pay";
+@import "blocks/installment";
+@import "blocks/feedback";
+@import "blocks/contacts";
+@import "blocks/timer";
+@import "blocks/catalog";
+@import "blocks/modal/cards";
+@import "blocks/modal/main";
+
+@font-face {
+  font-family: 'Gilray';
+  src: url("./public/fonts/Gilroy-Black.ttf") format('truetype');
+}
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Gilray',Arial,sans-serif;
+  @media (max-width: 1000px) {
+    font-size: 15px;
+  }
+  @media (max-width: 570px) {
+    font-size: 14px;
+  }
+}
+p {
+  margin-bottom: 0rem;
+}
+
+
